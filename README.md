@@ -1,1 +1,1 @@
-# tsagame Angad is gay
+# tsagame
