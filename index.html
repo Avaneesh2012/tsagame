@@ -1,25 +1,42 @@
-
 <!DOCTYPE html>
 <html>
-<body style="background:#222;color:white;text-align:center;font-family:Arial">
-
-<div style="margin-top:20vh">
-<h1></h1>
-<h2>Main Menu</h2>
-
-<button onclick="play()">Play</button><br><br>
-<button onclick="settings()">Settings</button><br><br>
-<p id="message"></p>
-</div>
-
+<head>
+<title>Game Menu</title>
 <style>
+body {
+  background: url("background.png") center/cover fixed;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+.menu {
+  margin-top: 15vh;
+}
 button {
-  width:250px;
-  padding:20px;
-  font-size:22px;
+  display: block;
+  margin: 15px auto;
+  width: 280px;
+  padding: 18px;
+  font-size: 20px;
+  color: white;
+  background: #773b83;
+  border: 2px solid #e879bd;
+  cursor: pointer;
+}
+button:hover {
+  background: #bd579e;
 }
 </style>
-
+</head>
+<body>
+<div class="menu">
+  <h1></h1>
+  <h2>Main Menu</h2>
+  <button onclick="continueGame()">Continue</button>
+  <button onclick="newWorld()">Add a New World</button>
+  <button onclick="levelSaves()">Level Saves</button>
+  <p id="message"></p>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
