@@ -1,19 +1,25 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Game Menu</title>
-</head>
-<body style="text-align:center; background:#222; color:white; font-family:Arial;">
+<body style="background:#222;color:white;text-align:center;font-family:Arial">
 
-    <h1></h1>
-    <h2>Main Menu</h2>
+<div style="margin-top:20vh">
+<h1></h1>
+<h2>Main Menu</h2>
 
-    <button onclick="play()">Play</button>
-    <button onclick="settings()">Settings</button>
-    <button onclick="credits()">Credits</button>
+<button onclick="play()">Play</button><br><br>
+<button onclick="settings()">Settings</button><br><br>
+<p id="message"></p>
+</div>
 
-    <p id="message"></p>
+<style>
+button {
+  width:250px;
+  padding:20px;
+  font-size:22px;
+}
+</style>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
