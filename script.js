@@ -1,7 +1,11 @@
-function play() {
-    document.getElementById("message").innerText = "Play";
+function continueGame() {
+  document.getElementById("message").innerText = "Continue";
 }
 
-function settings() {
-    document.getElementById("message").innerText = "Settings";
+function newWorld() {
+  document.getElementById("message").innerText = "Add a New World";
+}
+
+function levelSaves() {
+  document.getElementById("message").innerText = "Level Saves";
 }
