@@ -1,0 +1,37 @@
+body {
+    background: url("./Background") center/cover fixed;
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+
+    cursor: url("./images/hand_normal.png") 0 0, auto;
+}
+
+.menu {
+  margin-top: 15vh;
+}
+
+button {
+  display: block;
+  margin: 15px auto;
+  width: 280px;
+  padding: 18px;
+  font-size: 20px;
+  color: white;
+  background: #773b83;
+  border: 2px solid #e879bd;
+
+
+  cursor: url("./images/hand_normal.png") 0 0, pointer;
+}
+
+
+button:hover {
+  background: #bd579e;
+  cursor: url("./images/hand_hover.png") 0 0, pointer;
+}
+
+
+button:active {
+  cursor: url("./images/hand_click.png") 0 0, pointer;
+}
