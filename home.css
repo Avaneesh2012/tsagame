@@ -5,19 +5,11 @@ body {
   text-align: center;
   font-family: fantasy;
 
-  cursor: url("./images/hand_normal.png") 0 0, auto;
+  cursor: url("./images/hand_normal.svg") 0 0, auto;
 }
 
 .menu {
   margin-top: 8vh;
-}
-
-.menu-sprite {
-  display: block;
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 15px;
 }
 
 h2 {
@@ -36,17 +28,17 @@ button {
   border: 2px solid #e879bd;
   border-radius: 8px;
 
-  cursor: url("./images/hand_normal.png") 0 0, pointer;
+  cursor: url("./images/hand_normal.svg") 0 0, pointer;
 }
 
 button:hover {
   background: #bd579e;
-  cursor: url("./images/hand_hover.png") 0 0, pointer;
+  cursor: url("./images/hand_hover.svg") 0 0, pointer;
 }
 
 button:active {
   background: #923d80;
-  cursor: url("./images/hand_click.png") 0 0, pointer;
+  cursor: url("./images/hand_click.svg") 0 0, pointer;
 }
 
 .start-button {
