@@ -1,50 +1,70 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Game Menu</title>
-<style>
-body {
-  background: url("Background") center/cover fixed;
-  color: white;
-  text-align: center;
-  font-family: Fantasy;
+  <title>Game Menu</title>
 
-  cursor: url("images/hand_normal.png") 0 0, auto;
-}
-.menu {
-  margin-top: 15vh;
-}
-button {
-  display: block;
-  margin: 15px auto;
-  width: 280px;
-  padding: 18px;
-  font-size: 20px;
-  color: white;
-  background: #773b83;
-  border: 2px solid #e879bd;
+  <style>
+    body {
+      background: url("Background") center/cover fixed;
+      color: white;
+      text-align: center;
+      font-family: Fantasy;
+      cursor: url("images/hand_normal.png") 0 0, auto;
+    }
 
+    .menu {
+      margin-top: 8vh;
+    }
 
-  cursor: url("images/hand_hover.png") 0 0, pointer;
-}
-button:hover {
-  background: #bd579e;
-}
+    .menu-sprite {
+      display: block;
+      width: 128px;
+      height: auto;
+      image-rendering: pixelated;
+      margin: 0 auto 20px;
+    }
 
-button:active {
-  cursor: url("images/hand_click.png") 0 0, pointer;
-}
-</style>
+    button {
+      display: block;
+      margin: 15px auto;
+      width: 280px;
+      padding: 18px;
+      font-size: 20px;
+      color: white;
+      background: #773b83;
+      border: 2px solid #e879bd;
+      cursor: url("images/hand_hover.png") 0 0, pointer;
+    }
+
+    button:hover {
+      background: #bd579e;
+    }
+
+    button:active {
+      cursor: url("images/hand_click.png") 0 0, pointer;
+    }
+  </style>
 </head>
+
 <body>
-<div class="menu">
-  <h1></h1>
-  <h2>Main Menu</h2>
-  <button onclick="continueGame()">Continue</button>
-  <button onclick="newWorld()">Add a New World</button>
-  <button onclick="levelSaves()">Level Saves</button>
-  <p id="message"></p>
-</div>
-<script src="script.js"></script>
+  <div class="menu">
+
+    <img
+      src="images/Sprite-start.png"
+      alt="Game sprite"
+      class="menu-sprite"
+    >
+
+    <h2>Main Menu</h2>
+
+    <button onclick="continueGame()">Continue</button>
+    <button onclick="newWorld()">Add a New World</button>
+    <button onclick="levelSaves()">Level Saves</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
