@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Game Menu</title>
-
-  
   <link rel="stylesheet" href="./home.css">
 </head>
 
@@ -15,14 +13,15 @@
     <h1>Game Menu</h1>
     <h2>Main Menu</h2>
 
+    <button class="start-button" onclick="startGame()" aria-label="Start Game">
+    <img src="./Sprite-start.png" alt="Start Game">
+    </button>
     <button onclick="continueGame()">Continue</button>
-    <button onclick="newWorld()">Add a New World</button>
     <button onclick="levelSaves()">Level Saves</button>
 
     <p id="message"></p>
   </div>
 
-  <!-- Attach the JavaScript file -->
   <script src="./script.js"></script>
 </body>
 </html>

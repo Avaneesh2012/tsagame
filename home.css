@@ -45,3 +45,29 @@ button:active {
   font-size: 20px;
   margin-top: 25px;
 }
+.start-button {
+  display: block;
+  width: 280px;
+  padding: 0;
+  margin: 15px auto;
+  background: transparent;
+  border: none;
+  cursor: url("./images/hand_normal.png") 0 0, pointer;
+}
+
+.start-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.start-button:hover {
+  background: transparent;
+  transform: scale(1.05);
+  cursor: url("./images/hand_hover.png") 0 0, pointer;
+}
+
+.start-button:active {
+  transform: scale(0.97);
+  cursor: url("./images/hand_click.png") 0 0, pointer;
+}
