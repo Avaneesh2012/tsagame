@@ -1,14 +1,19 @@
 body {
-    background: url("./Background") center/cover fixed;
-    color: white;
-    text-align: center;
-    font-family: fantasy;
+  background: url("./Background") center / cover fixed;
+  background-color: #24152b;
+  color: white;
+  text-align: center;
+  font-family: fantasy;
 
-    cursor: url("./images/hand_normal.png") 0 0, auto;
+  cursor: url("./images/hand_normal.png") 0 0, auto;
 }
 
 .menu {
-  margin-top: 15vh;
+  margin-top: 8vh;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 button {
@@ -17,21 +22,26 @@ button {
   width: 280px;
   padding: 18px;
   font-size: 20px;
+  font-family: fantasy;
   color: white;
   background: #773b83;
   border: 2px solid #e879bd;
-
+  border-radius: 8px;
 
   cursor: url("./images/hand_normal.png") 0 0, pointer;
 }
-
 
 button:hover {
   background: #bd579e;
   cursor: url("./images/hand_hover.png") 0 0, pointer;
 }
 
-
 button:active {
+  background: #923d80;
   cursor: url("./images/hand_click.png") 0 0, pointer;
+}
+
+#message {
+  font-size: 20px;
+  margin-top: 25px;
 }

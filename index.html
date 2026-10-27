@@ -1,73 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Game Menu</title>
 
-
-<style>
-body {
-  background: url("Background") center/cover fixed;
-  background-color: #24152b;
-  color: white;
-  text-align: center;
-  font-family: Fantasy;
-
-  cursor: url("./images/hand_normal.png") 0 0, auto;
-}
-.menu {
-  margin-top: 15vh;
-}
-h2 {
-  font-size: 32px;
-}
-button {
-  display: block;
-  margin: 15px auto;
-  width: 280px;
-  padding: 18px;
-  font-size: 20px;
-  font-family: fantasy;
-  color: white;
-  background: #773b83;
-  border: 2px solid #e879bd;
-  border-radius: 8px;
-
-    .menu {
-      margin-top: 8vh;
-    }
-
-  cursor: url("./images/hand_click.png") 0 0, pointer;
-}
-button:hover {
-  background: #bd579e;
-  cursor: url("./images/hand_hover.png")
-}
-
-button:active {
-  background: #923d80;
-  cursor: url("images/hand_click.png") 0 0, pointer;
-}
-
-#message {
-  font-size:20px;
-  margin-top: 25px;
-}
-</style>
+  
+  <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
-<div class="menu">
-  <h1>Game Menu</h1>
-  <h2>Main Menu</h2>
-  <button onclick="continueGame()">Continue</button>
-  <button onclick="newWorld()">Add a New World</button>
-  <button onclick="levelSaves()">Level Saves</button>
-  <p id="message"></p>
-</div>
+  <div class="menu">
+    <h1>Game Menu</h1>
+    <h2>Main Menu</h2>
 
-<script src="script.js"></script>
+    <button onclick="continueGame()">Continue</button>
+    <button onclick="newWorld()">Add a New World</button>
+    <button onclick="levelSaves()">Level Saves</button>
+
+    <p id="message"></p>
+  </div>
+
+  <!-- Attach the JavaScript file -->
+  <script src="./script.js"></script>
 </body>
 </html>
