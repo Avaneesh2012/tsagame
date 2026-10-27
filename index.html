@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Game Menu</title>
 
-  
-  <link rel="stylesheet" href="./home.css">
+  <style>
+    body {
+      background: url("Background") center/cover fixed;
+      color: white;
+      text-align: center;
+      font-family: Fantasy;
+      cursor: url("images/hand_normal.png") 0 0, auto;
+    }
+
+    .menu {
+      margin-top: 8vh;
+    }
+
+    .menu-sprite {
+      display: block;
+      width: 128px;
+      height: auto;
+      image-rendering: pixelated;
+      margin: 0 auto 20px;
+    }
+
+    button {
+      display: block;
+      margin: 15px auto;
+      width: 280px;
+      padding: 18px;
+      font-size: 20px;
+      color: white;
+      background: #773b83;
+      border: 2px solid #e879bd;
+      cursor: url("images/hand_hover.png") 0 0, pointer;
+    }
+
+    button:hover {
+      background: #bd579e;
+    }
+
+    button:active {
+      cursor: url("images/hand_click.png") 0 0, pointer;
+    }
+  </style>
 </head>
 
 <body>
   <div class="menu">
-    <h1>Game Menu</h1>
+
+    <img
+      src="images/Sprite-start.png"
+      alt="Game sprite"
+      class="menu-sprite"
+    >
+
     <h2>Main Menu</h2>
 
     <button onclick="continueGame()">Continue</button>
@@ -22,7 +64,6 @@
     <p id="message"></p>
   </div>
 
-  <!-- Attach the JavaScript file -->
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
