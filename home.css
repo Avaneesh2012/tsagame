@@ -12,6 +12,14 @@ body {
   margin-top: 8vh;
 }
 
+.menu-sprite {
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+}
+
 h2 {
   font-size: 32px;
 }
@@ -41,18 +49,10 @@ button:active {
   cursor: url("./images/hand_click.png") 0 0, pointer;
 }
 
-#message {
-  font-size: 20px;
-  margin-top: 25px;
-}
 .start-button {
-  display: block;
-  width: 280px;
   padding: 0;
-  margin: 15px auto;
   background: transparent;
   border: none;
-  cursor: url("./images/hand_normal.png") 0 0, pointer;
 }
 
 .start-button img {
@@ -64,10 +64,13 @@ button:active {
 .start-button:hover {
   background: transparent;
   transform: scale(1.05);
-  cursor: url("./images/hand_hover.png") 0 0, pointer;
 }
 
 .start-button:active {
   transform: scale(0.97);
-  cursor: url("./images/hand_click.png") 0 0, pointer;
+}
+
+#message {
+  font-size: 20px;
+  margin-top: 25px;
 }

@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Menu</title>
   <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
   <div class="menu">
-
     <img
-      src="images/Sprite-start.png"
+      src="./images/Sprite-start.png"
       alt="Game sprite"
       class="menu-sprite"
     >
 
+    <h1>Game Menu</h1>
     <h2>Main Menu</h2>
 
     <button class="start-button" onclick="startGame()" aria-label="Start Game">
-    <img src="./Sprite-start.png" alt="Start Game">
+      <img src="./images/Sprite-start.png" alt="Start Game">
     </button>
+
     <button onclick="continueGame()">Continue</button>
     <button onclick="levelSaves()">Level Saves</button>
 
