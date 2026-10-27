@@ -8,6 +8,8 @@ body {
   color: white;
   text-align: center;
   font-family: Fantasy;
+
+  cursor: url("hand_normal.png") 0 0, auto;
 }
 .menu {
   margin-top: 15vh;
@@ -21,10 +23,16 @@ button {
   color: white;
   background: #773b83;
   border: 2px solid #e879bd;
-  cursor: pointer;
+
+
+  cursor: url("hand_hover.png") 0 0, pointer;
 }
 button:hover {
   background: #bd579e;
+}
+
+button:active {
+  cursor: url("hand_click.png") 0 0, pointer;
 }
 </style>
 </head>
